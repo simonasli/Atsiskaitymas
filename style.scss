@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Hubballi&family=Poppins:wght@300&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+}
+button {
+  padding: 1rem 2rem;
+  background-color: white;
+  font-weight: bold;
+  border: 0.3rem solid white;
+  border-image: url(assets/background.svg) 10% stretch;
+  border-radius: 12px;
+}
+header {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+nav {
+  div {
+    display: none;
+  }
+  .hamburger {
+    width: 2rem;
+  }
+}
+.bg1 {
+  background-image: url(assets/graphic.png);
+  background-repeat: no-repeat;
+  background-position: right -10rem top -2rem;
+  background-size: 25rem 25rem;
+}
+.bg2 {
+  background-image: url(assets/upsell-footer-image.svg);
+  background-repeat: no-repeat;
+  background-position: right -8rem bottom;
+  background-size: 25rem 25rem;
+}
+main {
+  border-bottom: 2px solid #cccccc;
+  .signup {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0rem 2rem 2rem 2rem;
+    article {
+      padding-top: 1rem;
+      width: 70%;
+      h1 {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+.pinktext {
+  color: #ff3998;
+}
+.freenft {
+  background-image: url(assets/background.svg);
+  background-size: cover 100% 100%;
+  background-position: left;
+  max-width: 100%;
+  margin-left: -1rem;
+  font-size: large;
+  min-height: 18rem;
+  padding: 1rem 2rem 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  p {
+    font-weight: bold;
+  }
+}
+.companies {
+  padding: 2rem;
+  display: grid;
+  grid-template-areas:
+    "boom blimp"
+    "qrco droplet";
+
+  .droplet {
+    grid-area: droplet;
+  }
+  .qrco {
+    grid-area: qrco;
+  }
+  .blimp {
+    grid-area: blimp;
+  }
+  .boom {
+    display: flex;
+    grid-area: boom;
+    img {
+      width: 11rem;
+    }
+  }
+  .opendoor {
+    display: none;
+  }
+}
+.auction {
+  article {
+    padding: 0rem 2rem 2rem 2rem;
+
+    a {
+      text-decoration: underline;
+      font-weight: bold;
+      color: rgb(31, 30, 30);
+    }
+  }
+  .nftlist {
+    padding: 0rem 2rem 4rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    overflow-y: hidden;
+    overflow-x: auto;
+    border-bottom: 2px solid #cccccc;
+    .nftitem {
+      padding-right: 2rem;
+      border-top-right-radius: 12px;
+      border-top-left-radius: 12px;
+
+      .nftinfo {
+        background-color: #cccccc;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        font-weight: bold;
+        padding: 1rem;
+        display: grid;
+        row-gap: 0.5rem;
+        grid-template-areas:
+          "bidder topbid"
+          "nftname price"
+          "nftnumber timeleft";
+
+        .bidder {
+          grid-area: bidder;
+          text-transform: uppercase;
+          font-size: small;
+          color: #ff8139;
+        }
+        .topbid {
+          color: #555555;
+          font-size: small;
+          grid-area: topbid;
+          text-align: right;
+          text-transform: uppercase;
+        }
+        .nftname {
+          grid-area: nftname;
+          font-size: large;
+        }
+        .price {
+          font-size: large;
+          grid-area: price;
+          display: flex;
+          justify-content: end;
+
+          img {
+            padding-right: 1rem;
+          }
+        }
+        .nftnumber {
+          color: #555555;
+          grid-area: nftnumber;
+        }
+        .timeleft {
+          color: #555555;
+          grid-area: timeleft;
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  padding: 2rem;
+
+  p {
+    padding-top: 2rem;
+    color: #cccccc;
+  }
+
+  .footerlogo {
+    p {
+      color: #777777;
+    }
+    div {
+      img {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
+  }
+  .aboutus {
+    display: grid;
+    grid-template-areas:
+      "about nft"
+      "contact social";
+
+    .footerabout {
+      display: flex;
+      flex-direction: column;
+
+      h5 {
+        color: #555555;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+
+      a {
+        text-decoration: none;
+        color: #555555;
+      }
+    }
+  }
+}
