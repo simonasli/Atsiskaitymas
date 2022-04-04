@@ -260,3 +260,44 @@ footer {
     }
   }
 }
+@media screen and (min-width: 1200px) {
+  .bg1 {
+    background-position: right -1rem top -2rem;
+    background-size: 30rem 30rem;
+  }
+  .bg2 {
+    min-height: 35rem;
+    background-position: right -2rem bottom;
+    background-size: 32rem 32rem;
+  }
+  .companies {
+    padding: 2rem;
+    display: grid;
+    grid-template-areas: "boom blimp qrco open droplet";
+
+    .opendoor {
+      display: block;
+      grid-area: open;
+    }
+  }
+  footer {
+    display: grid;
+    grid-template-areas: "logo about";
+
+    .footerlogo {
+      grid-area: logo;
+    }
+    .aboutus {
+      grid-area: about;
+    }
+  }
+  .freenft {
+    background-image: url(assets/background.svg);
+    background-size: cover;
+    border-radius: 12px;
+    background-repeat: no-repeat;
+    background-position: left;
+    max-width: 100%;
+    margin: 0rem 2rem;
+  }
+}
